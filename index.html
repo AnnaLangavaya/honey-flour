@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мед и Мука — Домашняя пекарня с натуральной выпечкой</title>
+    <meta name="description"
+        content="Домашняя пекарня 'Мед и Мука' - свежий хлеб, выпечка и десерты по традиционным рецептам из натуральных ингредиентов.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-amber-50 text-gray-800">
+    <!-- Hero -->
+    <section class="relative text-center py-20 px-4 bg-gradient-to-b from-amber-100 to-amber-50">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-amber-800">Мед и Мука</h1>
+            <p class="text-xl md:text-2xl mb-8 text-amber-700">Домашняя пекарня с душой и любовью к традициям</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#order"
+                    class="bg-amber-600 hover:bg-amber-700 text-white py-3 px-8 rounded-full font-medium transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-bread-slice mr-2"></i>Заказать
+                </a>
+                <a href="#menu"
+                    class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 px-8 rounded-full font-medium transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-utensils mr-2"></i>Меню
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-8 bg-amber-50"></div>
+    </section>
+
+    <!-- About -->
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <img src="/img/info.jpg" alt="Пекарня Мед и Мука" class="rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6 text-amber-700">О нашей пекарне</h2>
+                <p class="mb-4 text-lg">"Мед и Мука" — это маленькая домашняя пекарня, где каждая булочка и каждый
+                    каравай хлеба выпекаются с душой. Мы возрождаем традиции домашней выпечки, используя только
+                    натуральные ингредиенты: муку высшего сорта, деревенские яйца, натуральный мед и сливочное масло.
+                </p>
+                <p class="text-lg">Наша миссия — дарить людям радость от вкуса настоящего хлеба, каким его помнят с
+                    детства. Без консервантов, улучшителей и прочей "химии". Только честные продукты с любовью к своему
+                    делу.</p>
+                <div class="mt-6 flex items-center text-amber-600">
+                    <i class="fas fa-heart mr-2"></i>
+                    <span>Выпекаем с 2018 года</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-amber-700">Наша выпечка</h2>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Хлеб -->
+                <div class="menu-item bg-amber-50 p-6 rounded-xl text-center border border-amber-100">
+                    <img src="/img/bread.jpg" alt="Хлеб" class="mx-auto mb-4 rounded-lg h-48 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Ржаной хлеб на закваске</h3>
+                    <p class="text-gray-600 mb-4">Традиционный русский хлеб с плотным мякишем и хрустящей корочкой</p>
+                    <p class="text-2xl font-bold text-amber-600">120 ₽</p>
+                    <button
+                        class="mt-4 bg-amber-100 hover:bg-amber-200 text-amber-800 py-2 px-4 rounded-full text-sm font-medium transition duration-300">
+                        <i class="fas fa-cart-plus mr-2"></i>Добавить в заказ
+                    </button>
+                </div>
+
+                <!-- Булочки -->
+                <div class="menu-item bg-amber-50 p-6 rounded-xl text-center border border-amber-100">
+                    <img src="/img/bun.jpg" alt="Свежие булочки c корицей"
+                        class="mx-auto mb-4 rounded-lg h-48 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Булочки с корицей</h3>
+                    <p class="text-gray-600 mb-4">Пышные булочки с корицей </p>
+                    <p class="text-2xl font-bold text-amber-600">60 ₽/шт</p>
+                    <button
+                        class="mt-4 bg-amber-100 hover:bg-amber-200 text-amber-800 py-2 px-4 rounded-full text-sm font-medium transition duration-300">
+                        <i class="fas fa-cart-plus mr-2"></i>Добавить в заказ
+                    </button>
+                </div>
+
+                <!-- Пироги -->
+                <div class="menu-item bg-amber-50 p-6 rounded-xl text-center border border-amber-100">
+                    <img src="/img/pie.jpg" alt="Пирог" class="mx-auto mb-4 rounded-lg h-48 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Пирог с яблоками </h3>
+                    <p class="text-gray-600 mb-4">Слоеный пирог с яблоками, корицей и медовой пропиткой</p>
+                    <p class="text-2xl font-bold text-amber-600">240 ₽</p>
+                    <button
+                        class="mt-4 bg-amber-100 hover:bg-amber-200 text-amber-800 py-2 px-4 rounded-full text-sm font-medium transition duration-300">
+                        <i class="fas fa-cart-plus mr-2"></i>Добавить в заказ
+                    </button>
+                </div>
+
+                <!-- Добавленные позиции -->
+                <div class="menu-item bg-amber-50 p-6 rounded-xl text-center border border-amber-100">
+                    <img src="/img/croissant.jpg" alt="Круассан"
+                        class="mx-auto mb-4 rounded-lg h-48 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Круассаны</h3>
+                    <p class="text-gray-600 mb-4">Слоеные круассаны с шоколадом, миндальной пастой или классические</p>
+                    <p class="text-2xl font-bold text-amber-600">90 ₽/шт</p>
+                    <button
+                        class="mt-4 bg-amber-100 hover:bg-amber-200 text-amber-800 py-2 px-4 rounded-full text-sm font-medium transition duration-300">
+                        <i class="fas fa-cart-plus mr-2"></i>Добавить в заказ
+                    </button>
+                </div>
+
+                <div class="menu-item bg-amber-50 p-6 rounded-xl text-center border border-amber-100">
+                    <img src="/img/macaroon.jpg" alt="Макаруны"
+                        class="mx-auto mb-4 rounded-lg h-48 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Французские макаруны</h3>
+                    <p class="text-gray-600 mb-4">Нежные воздушные пирожные с хрустящей корочкой и разнообразными
+                        начинками: ваниль, малина,
+                        фисташка, шоколад</p>
+                    <p class="text-2xl font-bold text-amber-600">85 ₽/шт</p>
+                    <button
+                        class="mt-4 bg-amber-100 hover:bg-amber-200 text-amber-800 py-2 px-4 rounded-full text-sm font-medium transition duration-300">
+                        <i class="fas fa-cart-plus mr-2"></i>Добавить в заказ </button>
+                </div>
+
+                <div class="menu-item bg-amber-50 p-6 rounded-xl text-center border border-amber-100">
+                    <img src="/img/cupcake.jpg" alt="Багет" class="mx-auto mb-4 rounded-lg h-48 w-full object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Капкейки</h3>
+                    <p class="text-gray-600 mb-4">Мягкие шоколадные кексы с пышной кремовой шапкой</p>
+                    <p class="text-2xl font-bold text-amber-600">120 ₽/шт</p>
+                    <button
+                        class="mt-4 bg-amber-100 hover:bg-amber-200 text-amber-800 py-2 px-4 rounded-full text-sm font-medium transition duration-300">
+                        <i class="fas fa-cart-plus mr-2"></i>Добавить в заказ </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-16 px-6 bg-amber-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-amber-700">Что говорят наши клиенты</h2>
+            <div class="grid gap-8 md:grid-cols-2">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 font-bold mr-4">
+                            А</div>
+                        <div>
+                            <h4 class="font-bold">Анна</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Лучший хлеб в городе! Всегда свежий и вкусный. Особенно люблю их ржаной на
+                        закваске - настоящий, как у бабушки в деревне. Теперь только у них покупаю!"</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 font-bold mr-4">
+                            О</div>
+                        <div>
+                            <h4 class="font-bold">Ольга</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Уют, тепло и невероятная выпечка! Заказываем всей семьей - дети обожают их
+                        круассаны, муж без ума от капкейков, а я не могу устоять перед яблочным пирогом. Рекомендую
+                        всем!"
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 font-bold mr-4">
+                            М</div>
+                        <div>
+                            <h4 class="font-bold">Михаил</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Как же приятно найти место, где делают настоящий хлеб! Без всякой химии, с душой.
+                        Цены адекватные, качество на высоте. Особенно хочу отметить их макаруны - шедевр!"</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 font-bold mr-4">
+                            Е</div>
+                        <div>
+                            <h4 class="font-bold">Екатерина</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Заказывала пироги на день рождения - все были в восторге! Теперь постоянно беру у
+                        них выпечку к чаю. Очень нравится, что можно заказать заранее и быть уверенной в качестве."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="py-16 px-6 bg-amber-700 text-white">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2 text-center">Сделать заказ</h2>
+            <p class="text-center mb-8 text-amber-100">Мы готовим свежую выпечку каждый день. Заказы принимаем до 18:00
+                для получения на следующий день.</p>
+
+            <form class="grid gap-5">
+                <div>
+                    <label for="name" class="block mb-1 font-medium">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Как к вам обращаться?"
+                        class="w-full p-3 rounded border border-amber-500 bg-amber-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                        required>
+                </div>
+
+                <div>
+                    <label for="contact" class="block mb-1 font-medium">Контактные данные</label>
+                    <input type="text" id="contact" placeholder="Телефон или Telegram"
+                        class="w-full p-3 rounded border border-amber-500 bg-amber-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                        required>
+                </div>
+
+                <div>
+                    <label for="order" class="block mb-1 font-medium">Ваш заказ</label>
+                    <textarea id="order" placeholder="Что вы хотите заказать? Укажите названия и количество."
+                        class="w-full p-3 rounded border border-amber-500 bg-amber-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                        rows="4"></textarea>
+                </div>
+
+                <div>
+                    <label for="date" class="block mb-1 font-medium">Дата получения</label>
+                    <input type="date" id="date"
+                        class="w-full p-3 rounded border border-amber-500 bg-amber-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                        required>
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" id="agree" class="mr-2" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit"
+                    class="bg-amber-800 hover:bg-amber-900 text-white py-3 px-6 rounded font-bold text-lg mt-4 transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-paper-plane mr-2"></i>Отправить заказ
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center text-amber-700">Контакты</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-800">Где нас найти</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt text-amber-600 mr-2"></i> г. Москва, ул. Пекарская,
+                        15</p>
+                    <p class="mb-2"><i class="fas fa-clock text-amber-600 mr-2"></i> Ежедневно с 8:00 до 20:00</p>
+                    <p class="mb-2"><i class="fas fa-phone-alt text-amber-600 mr-2"></i> +7 (123) 456-78-90</p>
+                    <p class="mb-4"><i class="fas fa-envelope text-amber-600 mr-2"></i> info@medimuka.ru</p>
+
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-amber-600 hover:text-amber-800 text-2xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-amber-600 hover:text-amber-800 text-2xl"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="text-amber-600 hover:text-amber-800 text-2xl"><i
+                                class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-amber-600 hover:text-amber-800 text-2xl"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3737899857536!2d37.61842331593095!3d55.75370398055255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0YPQuy4sIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA3MDc4!5e0!3m2!1sru!2s!4v1620000000000!5m2!1sru!2s"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="rounded-lg shadow-md"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-amber-800 text-amber-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold text-white">Мед и Мука</h3>
+                    <p>Домашняя пекарня с любовью</p>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p>&copy; 2025 Пекарня "Мед и Мука". Все права защищены.</p>
+                    <p class="text-sm mt-1">ИП Иванова А.А. ОГРНИП 1234567890123</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
